@@ -1,0 +1,90 @@
+// App
+def AppName:String()
+def AppArgs:List()
+def Run:String(command:String)
+def System:Int(command:String)
+
+// Console
+def Input:String(prompt:String)
+def Print(msg:String)
+
+// Dir
+//def DirContents:List(path:String)
+def CurrentDir:String()
+def ChangeDir(dir:String)
+def FullPath:String(filename:String)
+
+// File
+def FileType:Int(filename:String)
+def DeleteFile(filename:String)
+
+// List
+//def RemoveIndex(list:List, index:Int)
+//def ListSize:Int(list:List)
+//def ClearList(list:List)
+
+// Dict
+//def Contains:Int(dict:Dict, key:String)
+//def RemoveKey(dict:Dict, key:String)
+//def DictSize:Int(dict:Dict)
+//def ClearDict(dict:Dict)
+
+// Math
+def ASin:Float(x:Float)
+def ATan:Float(x:Float)
+def ATan2:Float(x:Float, y:Float)
+def Abs:Float(x:Float)
+def Ceil:Float(x:Float)
+def Clamp:Float(x:Float, min:Float, max:Float)
+def Cos:Float(x:Float)
+def Exp:Float(x:Float)
+def Floor:Float(x:Float)
+def Log:Float(x:Float)
+def Max:Float(x:Float, y:Float)
+def Min:Float(x:Float, y:Float)
+def Pow:Float(x:Float, y:Float)
+def Sgn:Float(x:Float)
+def Sin:Float(x:Float)
+def Sqrt:Float(x:Float)
+def Tan:Float(x:Float)
+
+// Memory
+def Dim:Ref(size:Int)
+def Undim(mem:Ref)
+def Redim(mem:Ref, size:Int)
+def LoadDim:Ref(filename:String)
+def SaveDim(mem:Ref, filename:String)
+def DimSize:Int(mem:Ref)
+def PeekByte:Int(mem:Ref, offset:Int)
+def PeekShort:Int(mem:Ref, offset:Int)
+def PeekInt:Int(mem:Ref, offset:Int)
+def PeekFloat:Float(mem:Ref, offset:Int)
+def PeekString:String(mem:Ref, offset:Int)
+def PeekRaw:Ref(mem:Ref, offset:Int)
+def PokeByte(mem:Ref, offset:Int, v:Int)
+def PokeShort(mem:Ref, offset:Int, v:Int)
+def PokeInt(mem:Ref, offset:Int, v:Int)
+def PokeFloat(mem:Ref, offset:Int, v:Float)
+def PokeString(mem:Ref, offset:Int, v:String)
+def PokeRaw(mem:Ref, offset:Int, v:Ref)
+
+// String
+def Len:Int(str:String)
+def Left:String(str:String, count:Int)
+def Right:String(str:String, count:Int)
+def Mid:String(str:String, offset:Int, count:Int)
+def Lower:String(str:String)
+def Upper:String(str:String)
+def Find:Int(str:String, find:String, offset:Int)
+def Replace:String(str:String, find:String, rep:String)
+def Trim:String(str:String)
+def Join:String(list:List, separator:String)
+def Split:List(str:String, separator:String)
+def StripExt:String(filename:String)
+def StripDir:String(filename:String)
+def ExtractExt:String(filename:String)
+def ExtractDir:String(filename:String)
+def Asc:Int(str:String, index:Int)
+def Chr:String(code:Int)
+def LoadString:String(filename:String)
+def SaveString(filename:String, str:String, append:Int)
